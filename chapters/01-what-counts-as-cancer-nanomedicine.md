@@ -1,125 +1,131 @@
-# What Counts as Cancer Nanomedicine?
+# Chapter 1 — What Counts as Cancer Nanomedicine?
 
-## Learning Objectives
-
-By the end of this chapter you should be able to:
-
-- **Define** a nanoparticle quantitatively, placing the 10–200 nm therapeutic range on a scale ladder from water molecules to red blood cells.
-- **Distinguish** a "small molecule that happens to be tiny" from an *engineered* nanoparticle by identifying the five design properties (size, architecture, payload, surface, biodistribution) that make the difference.
-- **Trace** the dose-loss chain from intravenous injection to intracellular payload release, and explain why adding a function to a particle does not guarantee that function operates in a patient.
-- **Evaluate** a nanomedicine claim by asking whether the particle's distribution was actually measured, rather than inferred from the tumor response.
-- **Explain** how nanoparticles are physically characterized and visualized (electron microscopy, dynamic light scattering) and why characterization must precede therapeutic claims.
-
-## Opening Case
-
-A graduate student presents a poster at a conference. Her group has built a polymeric nanoparticle that carries doxorubicin, a common chemotherapy drug, and decorated its surface with a peptide that binds a receptor overexpressed on breast cancer cells. In cell culture, the targeted particle kills the cancer cells at one-tenth the dose of free drug. The data are clean. The mechanism is plausible. The poster concludes that the particle is "tumor-targeted."
+A graduate student presents a poster at a conference. Her group has built a polymeric nanoparticle that carries doxorubicin, a common chemotherapy drug, and decorated its surface with a peptide that binds a receptor overexpressed on breast cancer cells. In cell culture, the targeted particle kills cancer cells at one-tenth the dose of free drug. The data are clean. The mechanism is plausible. The poster concludes that the particle is "tumor-targeted."
 
 Then a reviewer asks a single question: *In your mouse experiment, what percentage of the injected particles actually reached the tumor?*
 
-She does not know. Nobody measured it. The group assumed that because the particle killed cells in a dish, and because tumors shrank somewhat in mice, the particle must have arrived at the tumor and released its drug there. But shrinkage is downstream of a dozen steps — circulation, escape from the bloodstream, penetration into tissue, uptake by cells, release of payload — and a failure at any one of them would still leave open the possibility that the modest tumor shrinkage came from drug that leaked out in circulation and reached the tumor as free molecules, exactly as conventional chemotherapy does. The "targeting" might be doing nothing. The group built an elegant object and then described what they hoped it did, not what they measured it doing.
+She does not know. Nobody measured it. The group assumed that because the particle killed cells in a dish, and because tumors shrank somewhat in mice, the particle must have arrived at the tumor and released its drug there. But tumor shrinkage is downstream of a dozen steps — circulation, escape from the bloodstream, penetration into tissue, uptake by cells, release of payload — and a failure at any one of them still leaves open the possibility that the modest shrinkage came from drug that leaked out in circulation and reached the tumor as free molecules, exactly as conventional chemotherapy does. The targeting might be doing nothing. The group built an elegant object and then described what they hoped it did, not what they measured it doing.
 
 This is the central discipline of the field. Cancer nanomedicine is not the study of clever particles. It is the study of *where a particle goes and what it does when it gets there* — and that requires measurement, not assumption.
 
-## Core Concepts
+---
 
-### What a nanoparticle is
+## What a nanoparticle is
 
-Plain language: a nanoparticle is an object too big to behave like a single drug molecule but too small to see, engineered to carry something somewhere.
-
-Formal definition: a **nanoparticle** is a particle with at least one dimension in the nanometer range — conventionally 1–1000 nm, with **10–200 nm being the most clinically relevant** window for cancer drug delivery (cba-47). To anchor the scale: a water molecule is about 0.3 nm across; a typical antibody is about 10 nm; a virus is 20–300 nm; a red blood cell is about 7000 nm (7 µm); and a human cell is 10,000–100,000 nm (cba-47). A nanoparticle therefore sits in the gap between "molecule" and "cell" — large enough to be engineered with internal structure and a designed surface, small enough to circulate in blood and slip through gaps that exclude a whole cell.
+A **nanoparticle** is a particle with at least one dimension in the nanometer range — conventionally 1 to 1000 nm, with 10 to 200 nm being the most clinically relevant window for cancer drug delivery. To anchor the scale: a water molecule is about 0.3 nm across; a typical antibody is about 10 nm; a virus is 20 to 300 nm; a red blood cell is about 7,000 nm (7 micrometers); a human cell is 10,000 to 100,000 nm. A nanoparticle therefore sits in the gap between molecule and cell — large enough to be engineered with internal structure and a designed surface, small enough to circulate in blood and slip through gaps that exclude a whole cell.
 
 <!-- → [DIAGRAM: nanoparticle size-scale ruler — log axis from 0.3 nm water molecule → 10 nm antibody/ADC → 100 nm liposome → 300 nm virus → 7 µm red blood cell → 10–100 µm cell, with the 10–200 nm "therapeutic window" band highlighted] -->
 
-### Why size is the whole game
+But size alone is not what makes something nanomedicine. A small drug molecule that happens to be a few nanometers wide is not nanomedicine. An **engineered nanoparticle** is one whose size, internal architecture, payload, and surface chemistry are deliberately specified to control its journey through the body. The engineering — not the smallness — is what counts. The five parameters that define an engineered nanoparticle as distinct from a small molecule are: size (and the distribution around it), architecture (how it is built internally), payload (what it carries and how the cargo is loaded), surface (what coats the outside and what ligands are attached), and biodistribution (where it actually goes, which is what the engineering of the first four is meant to determine).
 
-The size range matters because it produces *behaviors* that free drug molecules do not have (cba-47):
+---
 
-- **Tumor accumulation.** Particles in this range can leak out of the abnormally permeable blood vessels that feed tumors and then stay there, because tumors drain poorly — the enhanced permeability and retention (EPR) effect, which Chapter 4 examines critically. A free small molecule diffuses everywhere; a 100 nm particle is excluded from most healthy tissue but not from leaky tumor vessels.
-- **Long circulation.** A particle can be coated to evade the body's filtering systems, so it stays in the blood longer than a free molecule, giving it more chances to reach a tumor (cba-47).
-- **Drug protection.** A payload sealed inside a particle is shielded from enzymes and clearance that would destroy it as a free molecule.
-- **Combined functions.** One particle can carry a drug, an imaging label, a targeting ligand, and a release trigger at once — behavior impossible for a simple molecule.
+## Why size produces behaviors molecules cannot have
 
-This is the dividing line the chapter title asks about. A small drug molecule that happens to be a few nanometers wide is *not* nanomedicine. An **engineered nanoparticle** is one whose size, internal architecture, payload, and surface chemistry are deliberately specified to control its journey through the body. The engineering — not the smallness — is what counts.
+The 10 to 200 nm range matters because particles in it do things free drug molecules cannot do.
 
-### Delivery is the mechanism
+**Tumor accumulation.** Tumor blood vessels are leakier than normal vasculature — gaps between endothelial cells that normal tissue does not have. Particles in the 10 to 200 nm range can escape through these gaps and then persist in the tumor, because tumors also drain poorly and lack functioning lymphatics. A free small molecule diffuses everywhere; a 100 nm particle is excluded from most healthy tissue but can accumulate in tumor tissue through this mechanism, called the **enhanced permeability and retention** (EPR) effect. Whether and how much EPR operates in human patients — as opposed to mouse tumor models — is one of the field's central contested questions, and Chapter 4 examines it in detail. For now, the physics: the particle is in the right size range to fit through a tumor vessel gap and too large to clear through the same lymphatics that would flush a small molecule.
 
-The single most important reframe in this book: nanomedicine is **transport and biodistribution engineering**, not a magic "targeting" label. The reason to build a nanoparticle is the *delivery problem* of conventional chemotherapy. Most cancer drugs are spread throughout the body by the bloodstream, exposing every tissue — bone marrow, gut lining, hair follicles, immune cells — to whatever the drug does. The toxicity that limits how much chemotherapy a patient can receive comes mostly from this collateral exposure (cba-47). The engineering goal is to concentrate drug where it is needed and minimize it where it is not.
+**Long circulation.** A particle can be coated to evade the body's filtering systems — primarily the liver and spleen — extending its time in circulation. A molecule that lasts minutes in the blood has few chances to reach a tumor; a particle that circulates for hours has far more. The coating most commonly used is **polyethylene glycol (PEG)**, which creates a hydrophilic surface that resists the opsonin proteins that would otherwise flag the particle for macrophage clearance.
 
-So every nanoparticle's fate is a *chain* of steps, and the dose is lost at each one:
+**Payload protection.** A drug sealed inside a particle is shielded from the enzymes and pH conditions in blood that would destroy it as a free molecule. Some therapeutic nucleic acids — siRNA, mRNA — would be degraded within seconds in blood if injected naked; encapsulation in a lipid nanoparticle protects them long enough to reach a cell and be taken up.
 
-> injected dose → survives circulation (not cleared by liver/spleen) → extravasates (escapes the blood vessel into tumor tissue) → penetrates (moves through dense tumor interstitium) → taken up by cells → releases payload → payload reaches its target
+**Multifunctionality.** One particle can simultaneously carry a drug, an imaging label, a targeting ligand, and a stimulus-responsive release mechanism. A small molecule can be one thing; a designed particle can be several things at once.
 
-A particle that performs beautifully in steps 1 and 2 but fails at step 4 delivers nothing. This is why the field's recurring sobering statistic — examined in detail in Chapter 4 — is that across published mouse studies, a **median of only about 0.7% of the injected nanoparticle dose reached the tumor** (Wilhelm et al., 2016) [contested — see pantry flag]. The number itself is debated, but the lesson is not: most of what you inject does not arrive.
+These behaviors are why nanomedicine exists as a field distinct from conventional pharmacology. The point is not to make drug delivery more sophisticated for its own sake; the point is that conventional chemotherapy has a fundamental delivery problem, and the 10 to 200 nm size range opens engineering solutions to that problem.
+
+---
+
+## The dose-loss chain
+
+The delivery problem of conventional chemotherapy is straightforward. Most cancer drugs are distributed throughout the body by the bloodstream, exposing every tissue — bone marrow, gut lining, hair follicles, immune cells — to the drug's activity. The toxicity that limits how much chemotherapy a patient can receive comes mostly from this collateral exposure. The goal of a nanoparticle delivery system is to concentrate drug where it is needed and minimize it where it is not.
+
+But between the syringe and the tumor cell's nucleus, the dose is lost at each step in a chain:
+
+> injected dose → survives circulation (not cleared by liver or spleen) → extravasates (escapes the blood vessel into tumor tissue) → penetrates (moves through the dense tumor interstitium) → taken up by cells → releases payload → payload reaches its target
+
+A particle that performs perfectly at step one and two but fails at step four delivers nothing useful. This is why the field's recurring and sobering finding — examined in detail in Chapter 4 — is that across published mouse studies, a **median of only about 0.7% of the injected nanoparticle dose reaches the tumor**. The exact figure is contested; the lesson is not. Most of what is injected does not arrive. Adding a targeting ligand to a particle that fails at step one does not solve the problem.
 
 <!-- → [DIAGRAM: dose-loss funnel — wide "injected dose" at top narrowing through circulation, extravasation, penetration, uptake, release, ending at a thin "payload at target" stream; ~0.7% width annotation at tumor stage] -->
 
-### Characterization before claims
+This chain is the reason the field's core discipline is measuring delivery, not assuming it. The opening-case student's error was not poor science at the bench — it was the inference from "cell culture response" and "some tumor shrinkage" to "the particle targeted the tumor." Neither measurement closes the chain. Only tracking the particle itself does.
 
-Before you can claim a particle does anything, you must know *what it is* — and nanoparticles are not single, identical molecules. A batch is a *population*. Its key descriptors (cba-47; Hare et al. / NCI Nanotechnology Characterization Laboratory, 2012):
+---
 
-- **Size and polydispersity** — the average diameter and the *spread* around it. A batch with the right average size but wide spread behaves inconsistently, because a 50 nm and a 300 nm particle take different routes through the body.
-- **Surface chemistry** — what coats the particle (e.g., polyethylene glycol, or "PEG") and whether ligands are correctly attached.
-- **Drug loading and release rate** — how much drug per particle, and how fast it comes out.
-- **Stability and sterility** — does it hold together in storage and in blood, and is it safe to inject.
+## Characterization before claims
 
-These are measured, not assumed. **Dynamic light scattering** estimates the size distribution in solution; **electron microscopy** lets you see individual particles directly. Because the features of a 100 nm particle sit far below the ~200 nm resolution limit of visible-light microscopy — light's wavelength is simply too large to resolve them (em-01) — researchers use electron microscopy, which trades photons for electrons whose far shorter wavelength resolves nanometer-scale structure. Scanning electron microscopy (SEM) surveys hundreds of particles at once to give population shape and size statistics; transmission electron microscopy (TEM) resolves the internal structure of a single particle (em-01). If you cannot see and size your particles, you cannot interpret what they did.
+Before a particle can be claimed to do anything, its physical properties must be measured. A batch of nanoparticles is not a single, identical molecule — it is a *population* with a distribution of sizes, surface chemistries, and drug loadings. The key descriptors are:
 
-### Image the delivery
+**Size and polydispersity.** The average diameter and the spread around it. A batch with a correct average but wide spread behaves inconsistently — a 50 nm and a 300 nm particle take different routes through the body, are cleared by different mechanisms, and extravasate with different efficiencies. Polydispersity is not a cosmetic quality metric; it is a predictor of in vivo behavior.
 
-The final concept ties the others together. If a nanomedicine fails in a patient, there are two very different explanations: the particle never arrived (a *delivery* failure), or it arrived and the target biology did not respond (a *biology* failure). These demand opposite fixes — redesign the particle versus rethink the drug — and you cannot tell them apart without knowing where the particle went. Labeling the particle with a tracer detectable by PET, MRI, or fluorescence imaging lets you watch its biodistribution and distinguish the two (cba-47). Tumor response alone cannot.
+**Surface chemistry.** What coats the particle and whether targeting ligands are correctly attached and oriented. A PEG coating that has aggregated into the wrong conformation or a targeting peptide that has detached during storage is invisible to a cell-killing assay but matters enormously in an animal.
 
-## Worked Example
+**Drug loading and release rate.** How much drug per particle, and how fast it comes out under physiological conditions. A particle that releases its payload in the bloodstream before reaching the tumor is delivering conventional free drug with extra steps.
 
-**Situation.** Two labs each report a liposomal doxorubicin formulation. Lab A's particles are 90 nm with a tight size distribution and are PEGylated (PEG-coated to evade clearance). Lab B's particles average 90 nm but with a wide distribution — many are over 250 nm — and carry no PEG coating. Both encapsulate the same amount of drug. In cell culture, both kill cancer cells identically. A clinician asks: which would you advance to a mouse efficacy study, and why?
+**Stability and sterility.** Does it hold together in storage, in serum, and at physiological pH and temperature? And is it safe to inject?
 
-**Reasoning — the dead end first.** The tempting move is to say "they're identical — same size on average, same drug, same cell-killing — so flip a coin." This is the trap the opening case warns against: it judges the particles by a dish assay that has *no circulation, no clearance, no extravasation*. Cell culture tests payload potency, not delivery. It cannot distinguish the two formulations because it removes every step where they differ.
+These properties are measured with specific tools. **Dynamic light scattering** estimates the size distribution of particles in solution by analyzing how they scatter a laser beam. **Electron microscopy** lets you see individual particles directly. This requires special mention: nanoparticles are far smaller than the resolution limit of visible-light microscopy — light's wavelength of roughly 400 to 700 nm means it physically cannot resolve features smaller than several hundred nanometers. Researchers therefore use electron beams, whose effective wavelengths at working energies are thousands of times shorter than light, resolving nanometer-scale features directly. Scanning electron microscopy surveys populations to give shape and size statistics; transmission electron microscopy resolves internal structure within a single particle. If you cannot see and size your particles, you cannot interpret what they did.
 
-**Resolution.** Re-anchor on the dose-loss chain. Lab B's wide distribution means a large fraction of particles exceed ~200 nm; oversized particles are cleared faster by the liver and spleen and extravasate poorly through tumor-vessel gaps, so fewer survive circulation and fewer reach the tumor. The absence of PEG compounds this — unPEGylated liposomes are rapidly recognized and removed from circulation (cba-47). Lab A's tight, PEGylated 90 nm particles are far more likely to circulate long enough to accumulate. This is exactly the design logic behind **Doxil**, the PEGylated liposomal doxorubicin approved in 1995, whose long circulation and tumor accumulation reduce the cardiac toxicity of free doxorubicin (Barenholz, 2012; cba-47). Lab A's formulation embodies that logic; Lab B's defeats it. Advance Lab A.
+Characterization is not bureaucratic paperwork. It is the step that connects "we built this object" to "we know what we built."
 
-**The lesson.** Two particles that look identical at the bench can have opposite fates in the body, because the bench omits the journey. Judge a nanomedicine on its predicted biodistribution, not its in-vitro potency.
+---
 
-**The limit.** This reasoning assumes the EPR effect operates in the target tumor. In a tumor with poorly permeable vessels, *neither* formulation may accumulate well, and the size/PEG advantage shrinks. Delivery logic narrows the choice; it does not guarantee the outcome.
+## Imaging the delivery
 
-## Common Misconceptions
+If a nanomedicine fails in a patient, there are two distinct explanations with opposite implications. The particle never arrived — a *delivery failure* — or it arrived and the target biology did not respond — a *biology failure*. These demand opposite fixes: redesign the particle versus rethink the drug. Tumor response alone cannot distinguish them.
 
-**"A targeting ligand solves delivery."** Plausible because a ligand that binds cancer cells *sounds* like it steers the particle to the tumor. It fails because a ligand acts only at the very last step of the chain — cellular uptake — and only *after* the particle has already survived circulation, extravasated, and penetrated the tissue (cba-47). If the particle never reaches the tumor, its surface ligand binds nothing. As in the opening case, decorating a particle with a peptide changes nothing about the steps that decide whether it arrives.
+Labeling the particle with a tracer detectable by PET, MRI, or optical imaging allows direct tracking of the particle's biodistribution: how much accumulates in the tumor, how much in the liver and spleen, and how the distribution changes over time. This measurement — not cell viability or even tumor volume — is the evidence that a particle actually targeted something. It is also the measurement most often absent from the literature, which is why the opening case's error is so common.
 
-**"Smaller is always better for reaching tumors."** Plausible because tinier particles diffuse faster and penetrate tissue more easily. It fails because particles below ~10 nm are rapidly filtered out by the kidneys and cleared before they accumulate, while the EPR window favors the 10–200 nm range (cba-47). Size is a tuned parameter with a sweet spot, not a "smaller wins" axis.
+The discipline of measuring delivery rather than inferring it from response is what separates a scientific claim from a design aspiration.
 
-**"If the tumor shrank, the particle worked as designed."** Plausible because shrinkage is the outcome we want. It fails because shrinkage is the end of a long chain and is consistent with the particle leaking its drug in circulation so that the tumor saw free drug — the targeting contributing nothing. This is the opening case exactly: response was treated as proof of mechanism. Only measuring biodistribution can close that gap.
+---
 
-**"Nanomedicine means the drug only goes to the tumor."** Plausible because that is the promise. It fails because even successful nanoparticles deliver a small fraction of dose to the tumor and substantial amounts to liver and spleen (Wilhelm et al., 2016) [contested — see pantry flag]. Nanomedicine *shifts* biodistribution favorably; it does not make delivery exclusive.
+## Two liposomes
 
-## Exercises
+Consider two labs, each reporting a liposomal doxorubicin formulation. Lab A's particles are 90 nm with a tight size distribution and are PEGylated. Lab B's particles average 90 nm but with a wide distribution — many particles exceed 250 nm — and carry no PEG coating. Both encapsulate the same amount of drug. In cell culture, both kill cancer cells identically.
 
-1. **(Recall/Understand.)** Place the following on a size ladder from smallest to largest, with approximate sizes in nm: red blood cell, water molecule, antibody, typical therapeutic liposome, virus. In one sentence, explain why the 10–200 nm range is the design target for tumor-delivery particles.
+The temptation is to say they are equivalent: same drug, same average size, same cell-killing. That judgment uses the one assay that cannot distinguish them, because cell culture removes every step of the dose-loss chain where the two formulations differ.
 
-2. **(Apply.)** A formulation has a mean diameter of 100 nm but a polydispersity that puts 30% of particles above 250 nm. Predict how this batch will behave differently in circulation and tumor accumulation from a tight 100 nm batch, and name the two clearance organs most responsible for removing the oversized fraction.
+Re-anchor on the chain. Lab B's wide distribution means a large fraction of particles exceed 200 nm; these are cleared faster by the liver and spleen and extravasate less efficiently through tumor vessel gaps, so fewer survive circulation and fewer reach the tumor. The absence of PEG compounds this — uncoated liposomes are rapidly opsonized and removed from circulation. Lab A's tight, PEGylated 90 nm particles are far more likely to circulate long enough to accumulate in tumor tissue. This is the design logic behind Doxil, the PEGylated liposomal doxorubicin approved in 1995, whose extended circulation and tumor accumulation reduce the cardiac toxicity of free doxorubicin. Lab A embodies that logic; Lab B defeats it.
 
-3. **(Apply+ / Analyze.)** A nanoparticle drug fails in a mouse efficacy study — tumors do not shrink. Design a single follow-up experiment, using an imaging label of your choice, that distinguishes a *delivery* failure from a *target-biology* failure. State what result would point to each explanation and what design decision each would trigger.
+Two particles that look identical in the dish can have opposite fates in the body because the dish omits the journey. Judge a nanomedicine on its predicted biodistribution, not its in-vitro potency.
 
-4. **(Create.)** Write a one-page **particle-design specification** for a liposome intended to deliver a chemotherapy payload to a solid tumor. Specify and justify, with reference to the dose-loss chain: target diameter and acceptable polydispersity, surface coating, payload and target loading, and the single characterization measurement you would require before any animal work. Include the one biodistribution measurement you would demand before claiming "tumor-targeted."
+---
 
-## What Would Change My Mind
+## What would change this picture
 
-The chapter's central claim is that delivery — not particle cleverness — is the binding constraint, and that nanomedicine claims must rest on measured biodistribution. A specific finding would force a revision: a large, well-controlled clinical study in which a class of nanoparticles produced consistent, clinically meaningful benefit across patients *without* the ability to measure or predict tumor delivery — i.e., where particle design alone, independent of confirmed biodistribution, reliably predicted outcome. If "build the right particle" turned out to be sufficient and delivery measurement turned out to be a needless ritual, the field's emphasis on biodistribution would be misplaced. To date, the opposite pattern dominates: the variability of tumor delivery is precisely what makes outcomes unpredictable (Wilhelm et al., 2016).
+The chapter's central claim is that delivery — not particle elegance — is the binding constraint, and that nanomedicine claims must rest on measured biodistribution. The finding that would force revision: a large, well-controlled clinical study in which a class of nanoparticles produced consistent, clinically meaningful benefit across patients without the ability to measure or predict tumor delivery — where particle design alone, independent of confirmed biodistribution, reliably predicted outcome. If "build the right particle" turned out to be sufficient and delivery measurement turned out to be unnecessary, the field's emphasis on biodistribution would be misplaced. The existing pattern is the opposite: the variability of tumor delivery is precisely what makes outcomes unpredictable.
 
-## Still Puzzling
+---
 
-- What is the *true* fraction of injected dose reaching human tumors, as opposed to mouse models? The widely cited ~0.7% figure comes from preclinical data, and human EPR may differ substantially (cba-47) [contested — see pantry flag].
-- Can we predict, before treatment, which patients have tumors permeable enough for nanoparticle accumulation — and would such a companion test transform the field from "build better particles" to "select better patients"?
-- Where is the boundary of "nanomedicine"? Antibody-drug conjugates (~10 nm) and lipid-nanoparticle mRNA vaccines (~100 nm) are both engineered carriers but sit at opposite ends of the size and complexity range. Is the category defined by size, by architecture, or by the delivery logic itself?
+## Still open
+
+What fraction of injected dose reaches human tumors — as opposed to mouse tumor models — is not well established. The widely cited ~0.7% figure comes from preclinical data, and human EPR may differ substantially. Whether EPR is even consistent enough across human patients to be a reliable design target is an active question that Chapter 4 addresses.
+
+Whether it will ever be possible to predict, before treatment, which patients have tumors permeable enough for nanoparticle accumulation is an open clinical question. A companion test that selected patients by tumor permeability would transform the field from "build better particles" to "select better patients" — a different kind of precision medicine.
+
+And where the boundary of nanomedicine lies is genuinely unclear. Antibody-drug conjugates at around 10 nm and lipid-nanoparticle mRNA vaccines at around 100 nm are both engineered carriers of biological payloads, but they sit at opposite ends of the size range and were developed by different communities. Whether the category is defined by size, by architecture, or by the delivery logic itself is a question the field has not settled.
+
+---
+
+## LLM Exercises
+
+1. **(Size ladder)** Place the following on a size ladder from smallest to largest with approximate sizes in nm: red blood cell, water molecule, antibody, therapeutic liposome, typical virus. In one sentence, explain why the 10 to 200 nm range is the design target for tumor-delivery particles, using the EPR effect and renal clearance as the two boundary conditions.
+
+2. **(Polydispersity)** A liposome formulation has a mean diameter of 100 nm but a polydispersity index that puts 30% of particles above 250 nm. Predict how this batch will behave differently in circulation and tumor accumulation compared to a tight 100 nm formulation, name the two clearance organs most responsible for removing the oversized fraction, and propose one manufacturing change that would tighten the distribution.
+
+3. **(Delivery versus biology)** A nanoparticle drug fails in a mouse efficacy study — tumors do not shrink. Design a single follow-up experiment, using an imaging modality of your choice, that distinguishes a delivery failure from a target-biology failure. State the result that would point to each explanation and the design decision each would trigger.
+
+4. **(Particle specification)** Write a one-paragraph particle design specification for a liposome intended to deliver a chemotherapy payload to a solid tumor. Specify and justify: target diameter and acceptable polydispersity, surface coating, and the single characterization measurement you would require before any animal work. Include the one biodistribution measurement you would demand before claiming "tumor-targeted."
+
+5. **(Claims analysis)** The opening-case graduate student revises her poster to add the following sentence: "Biodistribution studies confirmed tumor accumulation, as evidenced by significant tumor growth inhibition in our xenograft model." Explain precisely why tumor growth inhibition does not confirm tumor accumulation, identify what measurement would actually confirm it, and propose the experimental design that would provide that measurement.
+
+---
 
 ## References
 
 - Barenholz, Y. (2012). Doxil® — the first FDA-approved nano-drug: lessons learned. *Journal of Controlled Release*, 160(2), 117–134.
-- Hare, J. I., Lammers, T., Ashford, M. B., Puri, S., Storm, G., & Barry, S. T. (2017). Challenges and strategies in anti-cancer nanomedicine development. *Advanced Drug Delivery Reviews*, 108, 25–38. [verify]
+- Hare, J. I., Lammers, T., Ashford, M. B., Puri, S., Storm, G., & Barry, S. T. (2017). Challenges and strategies in anti-cancer nanomedicine development. *Advanced Drug Delivery Reviews*, 108, 25–38.
 - Matsumura, Y., & Maeda, H. (1986). A new concept for macromolecular therapeutics in cancer chemotherapy: mechanism of tumoritropic accumulation of proteins and the antitumor agent SMANCS. *Cancer Research*, 46(12 Pt 1), 6387–6392.
-- NCI Nanotechnology Characterization Laboratory / Hare et al. — Best Practices in Cancer Nanotechnology. *Clinical Cancer Research*, 18(12), 3229–3241 (2012). [verify]
+- NCI Nanotechnology Characterization Laboratory. Best practices in cancer nanotechnology. *Clinical Cancer Research*, 18(12), 3229–3241 (2012).
 - Wilhelm, S., Tavares, A. J., Dai, Q., Ohta, S., Audet, J., Dvorak, H. F., & Chan, W. C. W. (2016). Analysis of nanoparticle delivery to tumours. *Nature Reviews Materials*, 1, 16014.
-- Source chapter: cba-47, "Nanotechnology in Cancer: Drug Delivery and Imaging."
-- Source chapter: em-01, "Introduction to Electron Microscopy" (nanoscale characterization and visualization).
-
-## Prompts
-
-*No figures have been generated for this chapter yet.*
