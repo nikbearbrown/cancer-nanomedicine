@@ -1,134 +1,134 @@
-# Targeting: EPR, Protein Corona, and Active Ligands
-
-## Learning Objectives
-
-By the end of this chapter you should be able to:
-
-- **Explain** the EPR (enhanced permeability and retention) effect as the basis of *passive* targeting, and articulate honestly why its reliability in human tumors is contested.
-- **Distinguish** passive targeting (EPR) from active targeting (surface ligands) and explain why adding a ligand improves cellular *uptake* without necessarily improving tumor *accumulation*.
-- **Describe** the protein corona — the layer of biomolecules that coats a nanoparticle in blood — and explain how it can mask targeting ligands and redirect particle fate.
-- **Interpret** the ~0.7% median tumor-delivery statistic (Wilhelm et al., 2016) and the critiques of EPR (Nichols & Bae) without either dismissing nanomedicine or overstating its targeting.
-- **Critique** a targeting claim by identifying which step of the delivery chain the targeting strategy actually affects.
-
-## Opening Case
+# Chapter 4 — Targeting: EPR, Protein Corona, and Active Ligands
 
 A biotech company designs a nanoparticle decorated with antibodies against HER2, a receptor overexpressed on some breast cancers. In the lab, the targeted particle binds HER2-positive cells beautifully and is taken up at many times the rate of an untargeted control. The story writes itself: the antibody steers the particle to the tumor. The company raises money on the strength of "active tumor targeting."
 
-In the animal study, the targeted and untargeted particles accumulate in the tumor at nearly the *same* total amount. The targeting antibody, so decisive in a dish, made almost no difference to how much drug reached the tumor. Two things had gone wrong with the company's mental model. First, the antibody acts only at the final step — cellular uptake — and only *after* the particle has already arrived; it does nothing to get the particle to the tumor in the first place. Second, the moment the particle entered blood, plasma proteins swarmed its surface and formed a coating — a **protein corona** — that buried many of the antibodies, blunting the targeting they had engineered so carefully.
+In the animal study, the targeted and untargeted particles accumulate in the tumor at nearly the same total amount. The targeting antibody, so decisive in a dish, made almost no difference to how much drug reached the tumor. Two things had gone wrong with the company's mental model. First, the antibody acts only at the final step — cellular uptake — and only *after* the particle has already arrived; it does nothing to get the particle to the tumor in the first place. Second, the moment the particle entered blood, plasma proteins swarmed its surface and formed a coating — a **protein corona** — that buried many of the antibodies, blunting the targeting they had engineered so carefully.
 
 The company had confused *binding cells in a dish* with *reaching a tumor in a body*. This chapter is about that gap — about what targeting can and cannot do, and about the honest, unsettled state of the central idea the whole field was built on.
 
-## Core Concepts
+---
 
-### Passive targeting and the EPR effect
+## Passive targeting and the EPR effect
 
-Plain language: tumors have leaky blood vessels and bad drainage, so nanoparticles tend to drift out into tumor tissue and get stuck there — no targeting molecule required.
+**Passive targeting** means accumulation without a targeting ligand — getting particles to the tumor through the physical properties of the particle and the physical properties of the tumor, nothing more. The mechanism that makes this possible is the **enhanced permeability and retention** (EPR) effect, first characterized by Matsumura and Maeda in 1986 and still the conceptual foundation of every approved nanoparticle cancer therapy.
 
-Formal definition: the **enhanced permeability and retention (EPR) effect** is the tendency of nanoparticles and macromolecules to accumulate in tumors more than in normal tissue, driven by two features of tumor vasculature: **increased permeability** (leaky vessel walls with gaps that let large molecules escape, which normal capillaries do not permit) and **poor lymphatic drainage** (impaired clearance, so what enters stays) (cba-47). First characterized by Matsumura and Maeda in 1986, EPR is the basis of **passive targeting** — accumulation that requires no targeting ligand, just the right particle size and circulation time (Matsumura & Maeda, 1986; cba-47).
+The EPR effect rests on two features of tumor vasculature. Tumor blood vessels are structurally abnormal — leaky, with gaps between endothelial cells that normal capillaries do not have. Nanoparticles in the right size range can escape through these gaps into the tumor tissue. Once there, the second feature holds them: tumors have impaired lymphatic drainage, so macromolecules and particles that enter do not clear efficiently. They accumulate. This is retention — not because the particle is sticky, but because the exit is broken.
 
-EPR is the foundational idea of cancer nanomedicine. It is also genuinely contested, and this chapter treats it honestly rather than as settled dogma.
+For passive targeting to work, a particle needs to be in the size range that fits through the vessel gaps (roughly 10 to 200 nm), and it needs to survive circulation long enough to reach the tumor multiple times before being cleared. PEGylation — coating with polyethylene glycol — extends circulation by shielding the particle from the opsonin proteins that would flag it for liver and spleen removal. This is the logic behind Doxil, the PEGylated liposomal doxorubicin approved in 1995: extend circulation, let the particle drift out of leaky tumor vessels, retain it there because the lymphatics are bad.
 
-### The honest problem with EPR
+EPR is the field's founding mechanism. It is also genuinely contested, and treating it as settled dogma rather than a hypothesis to be measured in each patient is one of the field's recurring mistakes.
 
-Here is the calibrated truth the field has had to confront. The EPR effect was characterized largely in *rodent* tumor models, which are fast-growing, relatively uniform, and highly permeable. **Human tumors are slower-growing, more heterogeneous, and far more variable in their vascular permeability** (cba-47). The magnitude of EPR "varies substantially across tumor types and patients," and "its clinical impact has been less dramatic than initial enthusiasm predicted" (cba-47).
+---
 
-The sharpest quantification: a 2016 meta-analysis of published nanoparticle studies found that a **median of only ~0.7% of the injected dose reached the tumor** (Wilhelm et al., 2016) [contested — see pantry flag]. Critics — notably Nichols and Bae — have argued that the EPR effect is unreliable and often overstated in humans, and that much preclinical enthusiasm rests on models that do not represent patient tumors (Nichols & Bae, 2014) [contested — see pantry flag].
+## The honest problem with EPR
 
-What you should take from this is *neither* "EPR is fake" *nor* "EPR delivers drugs to tumors." The honest position: EPR is real but variable and frequently weak in human tumors; it is the engine behind every approved passive-targeting nanomedicine, yet it does not reliably deliver the large fractions early enthusiasts assumed. The field is actively re-examining whether the 0.7% figure is even the right way to measure delivery and what fraction is needed for benefit. Treat any claim of dependable EPR-based tumor targeting as a hypothesis to be measured in *that* tumor, not a property you can assume.
+The EPR effect was characterized primarily in rodent tumor models — fast-growing, relatively uniform, highly vascular, and highly permeable. Human tumors are slower-growing, more heterogeneous, and far more variable in their vascular permeability. Some human tumors are permeable enough for meaningful EPR-driven accumulation; many are not; and there is currently no reliable way to know before treatment which category a given patient's tumor falls into.
+
+The sharpest quantification of the gap came from a 2016 meta-analysis by Wilhelm and colleagues, who compiled published nanoparticle delivery data across studies and found a median of roughly **0.7% of the injected dose reaching the tumor**. This number is widely cited and widely contested — it conflates particles of different sizes, surface chemistries, and tumor types; it is drawn largely from mouse studies; and the fraction of dose needed for clinical benefit is separately uncertain. But the underlying message is not seriously disputed: EPR is variable and frequently weak in human tumors, and the high accumulation fractions observed in many mouse experiments do not reproduce reliably in patients.
+
+The honest position is neither "EPR is fake" nor "EPR reliably delivers drugs." It is something more uncomfortable: EPR is real but heterogeneous, it is the mechanism behind every approved passive-targeting nanomedicine, and its magnitude in any given patient's tumor cannot currently be predicted from outside the patient. The tumor permeability that enables accumulation in one patient may be absent in another with an apparently identical diagnosis.
+
+This matters practically. A particle designed entirely around EPR-based delivery is betting on a mechanism that may simply not operate in a substantial fraction of patients. Recognizing this is not a reason to abandon nanomedicine; it is a reason to measure delivery rather than assume it, and to develop imaging tools that identify which patients have permeable enough tumors before committing to a therapy designed around that permeability.
 
 <!-- → [DIAGRAM: EPR reliability spectrum — a horizontal bar from "mouse models (high, uniform permeability)" on the left to "human tumors (variable, often weak)" on the right; a marker at ~0.7% median injected dose to tumor (Wilhelm 2016); two annotation labels "hype: reliable targeting" and "cynicism: nanomedicine fails" struck through, with a centered "calibrated: real but variable" label] -->
 
-### Active targeting and what it actually changes
+---
 
-Plain language: you can glue molecules to a particle's surface that grab onto cancer cells — but grabbing happens only after the particle has already arrived.
+## Active targeting and what it actually changes
 
-Formal definition: **active targeting** adds **targeting ligands** — antibodies, antibody fragments, peptides, aptamers (short nucleic acids selected to bind a target), or small molecules like folic acid — to the nanoparticle surface, so it binds a specific marker on cancer cells (cba-47). Common targets include HER2, EGFR, the transferrin receptor (high on proliferating cells), the folate receptor (enriched on some cancers), and CD44 (cba-47).
+**Active targeting** adds surface ligands — antibodies, peptide fragments, aptamers, small molecules like folic acid — to the particle's surface so that it binds a specific marker on cancer cells. The targets are typically receptors overexpressed on tumor cells: HER2, EGFR, transferrin receptor, folate receptor, CD44.
 
-The crucial, widely misunderstood point: **active targeting changes cellular uptake, not necessarily tumor accumulation.** The ligand operates at the *last* step of the delivery chain — binding and entry into a cell — *after* the particle has survived circulation, extravasated, and penetrated the tissue. It cannot improve those earlier steps. As the source states plainly, active targeting "has not always produced the dramatic improvements over passive targeting that initial enthusiasm predicted," for several reasons (cba-47):
+The crucial and widely misunderstood point is that active targeting changes **cellular uptake**, not necessarily **tumor accumulation**. A ligand operates at the final step of the delivery chain — binding and internalization into a cell. It acts only after the particle has already survived circulation, extravasated through the vessel wall, and penetrated the tumor interstitium. It cannot improve those earlier steps. The fraction of dose that reaches the tumor is determined by circulation half-life, vessel permeability, and tissue penetration — all of which precede the ligand's moment of action.
 
-- The fraction of dose reaching the tumor is often limited by *clearance and circulation*, which the ligand does not change.
-- **Tumor heterogeneity** means not all cells express the target.
-- The **protein corona** can mask the ligands.
-- Targeting may improve uptake at the tumor *without improving overall tumor accumulation* — exactly the opening case.
+This is why the opening-case company saw equal total accumulation between targeted and untargeted particles: the antibody affected what happened to particles that were already in the tumor, not how many got there. Their total amount at the tumor site — governed by EPR and clearance — was the same. The targeted particles entered cells more efficiently once present; the untargeted particles sat in the interstitium longer. From the perspective of delivered drug to tumor tissue, the difference was small.
 
-This is why the opening-case company saw equal total accumulation: the antibody helped cells *take up* particles once present but did nothing to get more particles *there*.
+This is not a universal finding — there are experimental systems where active targeting has improved tumor accumulation, often by altering how particles interact with the tumor endothelium rather than with tumor cells directly. But it is the dominant pattern, and assuming that a ligand which works in a dish will increase tumor delivery in an animal is the mistake the field has made repeatedly.
+
+Active targeting can still be valuable. Better cellular uptake means more drug inside tumor cells rather than stranded in the interstitium. Receptor-mediated endocytosis can deliver particles to specific intracellular compartments and improve payload release. And when the target is truly tumor-specific and dense, the ligand can improve the ratio of tumor-cell uptake to non-specific stromal uptake. These are real benefits. They are just not the benefit most often claimed — tumor accumulation.
 
 <!-- → [DIAGRAM: passive vs active targeting + protein corona schematic. Left panel: passive — bare PEGylated particle drifting out of a leaky tumor vessel (EPR), no ligand. Middle panel: active — particle with surface antibodies binding a receptor on a tumor cell, AFTER extravasation. Right panel (corona): a particle entering blood, plasma proteins (opsonins) adsorbing onto its surface and burying the targeting ligands; arrow to liver/spleen uptake.] -->
 
-### The protein corona
+---
 
-Plain language: the instant a nanoparticle hits blood, proteins stick all over it, giving it a new surface the body actually "sees" — not the one you designed.
+## The protein corona
 
-Formal definition: the **protein corona** is the layer of plasma proteins and other biomolecules that adsorbs onto a nanoparticle's surface within seconds of entering biological fluid. It has two consequences that matter enormously for targeting (cba-47):
+The moment a nanoparticle enters blood, plasma proteins begin adsorbing onto its surface. Within seconds, the particle acquires a dense coating of biomolecules — albumin, immunoglobulins, fibrinogen, apolipoproteins, complement proteins, and many others — that forms what is called the **protein corona**. The engineered surface you designed is no longer what the body sees; the corona is.
 
-1. **It can mask targeting ligands.** Proteins coating the surface can physically bury the antibodies or peptides you attached, so the ligand can no longer reach its receptor — defeating active targeting before the particle ever meets a tumor cell.
-2. **It redirects particle fate.** Certain corona proteins (opsonins) flag the particle for clearance by the liver and spleen, shortening circulation. The corona, not your designed surface, often determines where the particle goes.
+Two consequences matter for targeting.
 
-The corona is why a particle that targets perfectly in protein-free cell-culture medium can fail in blood: in the dish there is no corona, so the bare ligands work; in the body, the corona forms and the ligands are masked. The opening case is this failure exactly. The practical implication: a targeting strategy must be validated *in a biological environment that forms a corona*, not just in clean medium.
+The corona can **mask targeting ligands**. Proteins adsorbing onto the particle surface can physically cover antibodies, peptides, or aptamers that were engineered to bind tumor receptors. The ligand is still covalently attached to the particle, but it cannot reach its receptor because a layer of plasma protein is in the way. This is precisely what happened in the opening case: the HER2 antibodies were buried by the corona before the particles ever encountered a tumor cell. The targeting that worked perfectly in protein-free culture medium failed in blood.
 
-### Putting it together: what targeting can and cannot do
+The corona can **redirect particle fate**. Certain proteins in the corona — complement fragments and opsonins — are recognition signals for macrophages in the liver and spleen. A particle whose engineered surface evades clearance may, once coated with the wrong proteins, be flagged for rapid removal. The PEG coating that was supposed to prevent this may be partially effective, but PEG does not prevent all corona formation, and the specific protein composition of the corona varies with particle surface chemistry, particle size, and patient plasma composition. The corona the particle acquires in one patient may differ from the corona it acquires in another.
 
-A clean summary you can carry:
+The protein corona is why validating a targeting strategy in clean cell-culture medium is insufficient. The bare ligand works in medium because there is no corona. In blood, the corona forms and the ligand may fail. Any targeting strategy must be tested in conditions that allow corona formation — at minimum, in full plasma — before conclusions about in vivo function are warranted.
 
-- **Passive targeting (EPR)** gets particles *to* the tumor — when the tumor is permeable enough. It is variable and often weak in humans (contested) [contested — see pantry flag].
-- **Active targeting (ligands)** improves uptake *once particles are at the tumor* — but does not get more particles there, and can be sabotaged by the corona.
-- **The protein corona** stands between your designed particle and its intended behavior, masking ligands and redirecting fate.
+There is an emerging view that the corona could be engineered as a feature rather than fought as a bug. Designing surfaces that deliberately recruit beneficial corona proteins — ones that prolong circulation or aid uptake by specific cell types — is conceptually appealing. This is an active research area, not an established strategy, but it represents a more honest engagement with the corona than pretending it can be eliminated.
 
-Neither targeting strategy overrides the dose-loss chain of Chapters 1 and 2. Targeting is not a magic word; it is an intervention at a *specific step*, and you must name which step.
+---
 
-## Worked Example
+## What targeting can and cannot do
 
-**Situation.** A team reports that their folate-targeted nanoparticle is taken up by folate-receptor-positive tumor cells at 8× the rate of an untargeted control in cell culture. They conclude the targeting will substantially increase tumor drug delivery in patients and plan a trial. Is this conclusion warranted?
+A particle travels through a sequence of environments — blood, tumor vessel wall, tumor interstitium, tumor cell surface, intracellular space — and targeting strategies act at specific points in that sequence, not uniformly across all of them.
 
-**Reasoning — the dead end first.** The 8× uptake number is impressive and real, and the intuition "more uptake means more delivery" feels airtight. The tempting conclusion: targeting multiplies tumor delivery several-fold, so the trial should show a clear advantage. This is precisely the inference the opening-case company made — and it is the dead end.
+**Passive targeting (EPR)** operates at the vessel-wall step: it gets particles from the blood into the tumor tissue, when tumor vessels are permeable enough. It is real but variable and often weak in human patients.
 
-The flaw: cell-culture uptake measures only the *final* step (binding and entry) in a setting with **no circulation, no clearance, and no protein corona** (cba-47). It says nothing about whether more particles will *reach* the tumor, and it omits the corona that may mask the folate ligands in blood. Tumor accumulation is set mainly by circulation and EPR (earlier steps the ligand cannot touch), and folate-receptor expression is heterogeneous, so many tumor cells may lack the target (cba-47).
+**Active targeting (ligands)** operates at the cell-surface step: it improves uptake into cells, after the particle has arrived. It does not improve accumulation at the tumor, and it can be sabotaged by the corona before it ever operates.
 
-**Resolution.** Reframe the question around the delivery chain. The right prediction: the folate ligand may modestly improve *uptake* in receptor-positive cells *that the particles already reach*, but it will not increase *total tumor accumulation*, which is governed by EPR and clearance. Expect, at best, better intracellular delivery in a subset of cells — not the several-fold whole-tumor increase the team assumed. Consistent with this, the source notes that the folate-camptothecin conjugate EC145 was tested in folate-receptor-positive cancers but did not achieve approval, while folate-receptor targeting *did* succeed in a different format — the antibody-drug conjugate mirvetuximab soravtansine, approved for ovarian cancer (cba-47) — suggesting the *format* and the delivery chain, not the targeting concept alone, decide success. Before the trial, the team should measure tumor accumulation *in vivo* (with a particle label) and test ligand function in the presence of plasma to check for corona masking.
+**Neither strategy overrides the dose-loss chain.** The fraction of injected dose that reaches the tumor is still determined primarily by clearance organs, vessel permeability, and interstitial penetration. Targeting is an intervention at a specific step, not a global multiplier on delivery. Claiming it is anything more requires data from the steps it is supposed to affect — not inference from the step it actually affects.
 
-**The lesson.** Cell-culture uptake validates that a ligand *can* bind; it does not predict tumor delivery, because it skips circulation, clearance, and the corona. Active targeting changes uptake, not accumulation.
+---
 
-**The limit.** This reasoning holds when EPR delivers at least *some* particles to the tumor. If EPR essentially fails in the target tumor, even perfect uptake is moot — there is nothing at the tumor to take up. And in formats where the targeting moiety *also* drives circulation and accumulation (as in some antibody-drug conjugates), the clean separation between "uptake" and "accumulation" blurs.
+## The folate receptor: a case study in inference gone wrong
 
-## Common Misconceptions
+Consider a concrete example. A team reports that their folate-targeted nanoparticle is taken up by folate-receptor-positive tumor cells at eight times the rate of an untargeted control in cell culture. They conclude the targeting will substantially increase tumor drug delivery in patients.
 
-**"Adding a targeting ligand increases how much drug reaches the tumor."** Plausible because the ligand binds cancer cells. It fails because the ligand acts only at cellular uptake, *after* arrival; total tumor accumulation is set by circulation and EPR, which the ligand does not change (cba-47). The opening case is this exactly: equal accumulation, different uptake.
+The 8× figure is real. The inference is wrong. Cell-culture uptake measures only the final step — binding and entry — in conditions with no circulation, no clearance, and no protein corona. It cannot predict total tumor accumulation, which is set by the earlier steps the ligand does not affect. In blood, the corona may mask the folate ligand. In the tumor, folate-receptor expression is heterogeneous — many cells may not express the target. Total accumulation will be governed by EPR, not by the folate ligand.
 
-**"If a targeted particle works in cell culture, it will work in the body."** Plausible because the binding is real. It fails because cell culture has no protein corona, so the bare ligands function; in blood, the corona can mask them (cba-47). A dish cannot test corona-dependent behavior.
+The history confirms this. The folate-camptothecin conjugate EC145 — tested specifically in folate-receptor-positive cancers — did not achieve regulatory approval. Meanwhile, folate-receptor targeting succeeded in a completely different format: the antibody-drug conjugate mirvetuximab soravtansine, approved for ovarian cancer. The same target, different carrier format, opposite outcome. What this suggests is that the format and the delivery chain, not the targeting concept in isolation, decide the result. An antibody-drug conjugate is not a nanoparticle — its delivery mechanism, circulation, and tumor penetration are different — and those differences, not the shared target, explain why one worked and the other did not.
 
-**"The EPR effect reliably delivers nanoparticles to human tumors."** Plausible because EPR is the field's foundational mechanism and works well in mice. It fails — or at least is unproven — because human tumors are far more variable, EPR's clinical impact has been "less dramatic than initial enthusiasm predicted," and a median of only ~0.7% of injected dose reached tumors in published studies (Wilhelm et al., 2016; Nichols & Bae, 2014) [contested — see pantry flag]. Treat reliable EPR as a hypothesis, not a fact.
+Before a trial based on folate targeting, the right measurements are: total tumor accumulation *in vivo* with a labeled particle, ligand function in the presence of plasma, and receptor expression in the specific patient population.
 
-**"Nanomedicine doesn't work because only 0.7% reaches the tumor."** Plausible as a cynical overcorrection. It fails because approved nanomedicines (Doxil, Abraxane, Onivyde) demonstrably benefit patients despite low delivery fractions — the benefit can come from reduced toxicity or improved pharmacokinetics, and the fraction *needed* for benefit may be small and is itself debated (cba-47). The honest stance is calibrated: low and variable delivery, real but modest benefits — neither hype nor dismissal.
+---
 
-## Exercises
+## What would change this picture
 
-1. **(Understand.)** Define the EPR effect and name its two underlying vascular features. In one sentence each, state why EPR works better in mouse tumors than in human tumors.
+The chapter's central claim is twofold: EPR-based passive targeting is real but variable and often weak in human tumors, and active targeting improves cellular uptake rather than tumor accumulation. Two findings would force revision in opposite directions.
 
-2. **(Apply.)** A targeted nanoparticle shows 10× higher uptake than an untargeted control in cell culture but identical total tumor accumulation in mice. Explain this result using the delivery chain: which step does the ligand affect, and which steps determine total accumulation? What single in-blood experiment would test whether the protein corona is masking the ligand?
+If a large, rigorously controlled human study showed that a targeting ligand *increases total tumor accumulation* — not just intracellular uptake — by a clinically meaningful margin across patients, the claim that ligands cannot overcome the circulation-and-clearance bottleneck would need revising. And if robust noninvasive imaging across many patients showed that EPR delivers a consistent, substantial fraction of injected dose to most human solid tumors, the "variable and often weak" characterization would be wrong.
 
-3. **(Apply+ / Analyze.)** Interpret the ~0.7% median delivery figure (Wilhelm et al., 2016) for two audiences: (a) an investor who concludes "nanomedicine is a failure," and (b) an enthusiast who insists EPR reliably targets tumors. Write a two- or three-sentence calibrated response to each that neither dismisses nor overstates the evidence, citing at least one approved nanomedicine and the contested nature of the statistic.
+The current evidence — the ~0.7% median, the variability across tumor types, the corona-masking mechanism, and the repeated failure of active targeting to improve accumulation over passive — points toward the claims as stated. But these are active experimental questions, not closed ones.
 
-4. **(Create.)** Design a **passive-vs-active targeting + corona evaluation plan** for a new HER2-targeted nanoparticle. Specify: (i) one experiment to measure total tumor accumulation independent of uptake; (ii) one experiment to test whether the protein corona masks the HER2 ligand; (iii) one criterion that would tell you the active-targeting ligand is *worth keeping* versus dropping for a simpler passive (PEGylated) design. State, in advance, what result would make you abandon active targeting for this particle.
+---
 
-## What Would Change My Mind
+## Still open
 
-The chapter's central claim is twofold: EPR-based passive targeting is real but unreliable in humans, and active targeting improves cellular uptake rather than tumor accumulation. A specific finding would force revision: a large, rigorously controlled human study showing that a targeting ligand *increases total tumor accumulation* (not just intracellular uptake) by a clinically meaningful margin across patients — i.e., that ligands overcome, rather than merely act after, the circulation-and-clearance bottleneck. Equally, robust noninvasive imaging across many patients showing that EPR delivers a consistent, substantial fraction of injected dose to most human solid tumors would overturn the "variable and often weak" characterization. The current evidence — the ~0.7% median, the variability across tumors, the corona-masking mechanism, and the repeated failure of active targeting to beat passive in accumulation (Wilhelm et al., 2016; Nichols & Bae, 2014; cba-47) — points the other way, but these are exactly the claims under active investigation.
+Whether the ~0.7% median delivery figure is the right metric at all is genuinely debated. It conflates very different particles and tumors, and the fraction of dose needed for clinical benefit — which depends on drug potency, tumor volume, and receptor density — is separately uncertain. Local concentration at the tumor may matter more than whole-body percentage, and very potent payloads may produce clinical benefit from fractional delivery that would look inadequate by a percent-of-dose metric.
 
-## Still Puzzling
+Whether patients can be stratified before treatment by tumor permeability — a companion imaging test that identifies who has EPR-accessible tumors — remains a major open question. Such a test would transform the clinical use of passive-targeting nanomedicines from population-average strategies to truly individualized therapy selection.
 
-- Is the ~0.7% median delivery figure the right metric at all? Some argue it conflates very different particles and tumors and that *local concentration at the tumor*, not whole-body percentage, is what matters (cba-47) [contested — see pantry flag].
-- Can we predict, before treatment, which patients have tumors permeable enough for EPR — a companion-imaging test that would convert nanomedicine from "build better particles" to "select responsive patients"?
-- Can the protein corona be engineered as a *feature* rather than fought as a bug — designing surfaces that recruit a beneficial corona that aids targeting or circulation, rather than masking ligands?
-- Why does folate-receptor targeting fail as a nanoparticle conjugate (EC145) yet succeed as an antibody-drug conjugate (mirvetuximab soravtansine) (cba-47)? What does this say about whether the carrier *format*, not the target, decides success?
+Whether the protein corona can be deliberately engineered to improve targeting rather than blocked as interference is an active area of inquiry that has not yet produced a clinical-stage strategy. Recruiting specific corona proteins that promote uptake by tumor endothelium or that extend circulation half-life is conceptually achievable but practically undemonstrated at scale.
+
+And the folate-receptor comparison — the same target failing in a nanoparticle format and succeeding in an antibody-drug conjugate format — is a natural experiment that the field has not fully analyzed. Understanding precisely which aspects of the delivery chain differed between EC145 and mirvetuximab soravtansine would clarify when targeting the same receptor in different formats changes the outcome.
+
+---
+
+## LLM Exercises
+
+1. **(EPR mechanics)** Define the EPR effect, name its two underlying vascular features, and explain in one sentence each why it works more reliably in mouse tumor models than in human tumors. Then identify the single measurement that would tell you whether EPR is operating in a specific patient's tumor before treatment.
+
+2. **(Active targeting chain analysis)** A targeted nanoparticle shows 10× higher cellular uptake than an untargeted control in cell culture, but identical total tumor accumulation in mice. Explain this result by mapping each finding to the specific step of the delivery chain it reflects. Identify the one in-blood experiment that would test whether the protein corona is masking the targeting ligand, and describe the result that would confirm corona-mediated masking.
+
+3. **(0.7% calibration)** Interpret the ~0.7% median tumor-delivery figure for two audiences: an investor who concludes "nanomedicine has failed," and an enthusiast who insists EPR reliably targets tumors. Write a two- to three-sentence calibrated response to each that neither dismisses nor overstates the evidence. Reference at least one approved nanomedicine and the contested nature of the statistic in your response.
+
+4. **(Folate-receptor case)** The folate-receptor-targeted nanoparticle conjugate EC145 failed in clinical trials; the folate-receptor-targeted antibody-drug conjugate mirvetuximab soravtansine succeeded. Both targeted the same receptor on the same cancer type. Identify at least three mechanistic differences between a nanoparticle and an antibody-drug conjugate at each step of the delivery chain that could explain the different outcomes. State which difference you consider most likely to be decisive and why.
+
+5. **(Targeting evaluation plan)** Design an evaluation plan for a new HER2-targeted liposomal nanoparticle before committing to a clinical trial. Specify: one experiment to measure total tumor accumulation independent of cellular uptake; one experiment to test whether the protein corona masks the HER2 ligand; one pre-specified criterion that would tell you the active-targeting ligand adds enough value over a simpler passive (PEGylated) design to justify the added complexity. State, in advance, the result that would lead you to drop active targeting.
+
+---
 
 ## References
 
 - Matsumura, Y., & Maeda, H. (1986). A new concept for macromolecular therapeutics in cancer chemotherapy: mechanism of tumoritropic accumulation of proteins and the antitumor agent SMANCS. *Cancer Research*, 46(12 Pt 1), 6387–6392.
-- Maeda, H. (2001). The enhanced permeability and retention (EPR) effect in tumor vasculature: the key role of tumor-selective macromolecular drug targeting. *Advances in Enzyme Regulation*, 41, 189–207. [verify]
+- Maeda, H. (2001). The enhanced permeability and retention (EPR) effect in tumor vasculature: the key role of tumor-selective macromolecular drug targeting. *Advances in Enzyme Regulation*, 41, 189–207.
 - Nichols, J. W., & Bae, Y. H. (2014). EPR: evidence and fallacy. *Journal of Controlled Release*, 190, 451–464.
 - Wilhelm, S., Tavares, A. J., Dai, Q., Ohta, S., Audet, J., Dvorak, H. F., & Chan, W. C. W. (2016). Analysis of nanoparticle delivery to tumours. *Nature Reviews Materials*, 1, 16014.
-- Source chapter: cba-47, "Nanotechnology in Cancer: Drug Delivery and Imaging."
-
-## Prompts
-
-*No figures have been generated for this chapter yet.*
